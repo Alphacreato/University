@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brookdale</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   
+  <!-- Navigation -->
+  <nav>
+    <img src="images/LOGO.png" alt="">
+    <div class = "navigation">
+         <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="blog.html">Blog</a></li>
+          <li><a href="course.html">Course</a></li>
+          <li><a href="contact.html">Contact</a></li>
+         </ul>
+         <img id="menu-btn" src="images/MENU.png" alt="">
+    </div>
+  </nav>
+
+  <!-- Home -->
+
+  <section id="blog-container">
+     <div class="blogs blogpost">
+        <div class="post">
+          <img src="images/BLOG1.jpg" alt="">
+          <h3>Master Web Development With Simplicity</h3>
+          <p>Web development encompasses the process of creating and maintaining websites or web applications. It involves a combination of programming, design, and problem-solving skills to build and maintain the functionality and appearance of a website. It's a broad field that encompasses various technologies and skills. Here's a brief overview:
+            <br><br>
+            Frontend Development: This involves creating the user interface and experience of a website. It typically involves HTML, CSS, and JavaScript. HTML provides the structure, CSS styles the presentation, and JavaScript adds interactivity.
+            <br><br>
+            Backend Development: This involves building the server-side of web applications. It includes managing databases, handling user authentication, and implementing server logic. Popular backend languages/frameworks include Node.js, Python (with frameworks like Django or Flask), Ruby on Rails, and PHP.
+            <br><br>
+            Full-Stack Development: Full-stack developers work on both the frontend and backend of web applications. They have a good understanding of both client-side and server-side technologies.
+            <br><br>
+            Web Frameworks and Libraries: These are pre-written, reusable code libraries or frameworks that help developers build web applications more efficiently. Examples include React.js, Angular, Vue.js (for frontend), Express.js (for backend), and many others.
+            <br><br>
+            Databases: Web applications often need to store and retrieve data. Common databases used in web development include MySQL, PostgreSQL, MongoDB (NoSQL), and SQLite.
+            <br><br>
+            Version Control Systems: Version control systems like Git are essential tools for web developers. They help manage changes to code, collaborate with other developers, and track project history.
+            <br><br>
+            Responsive Design: With the increasing use of mobile devices, it's essential for websites to be responsive, meaning they adapt well to different screen sizes and devices.
+            <br><br>
+            Security: Web developers need to be mindful of security best practices to protect against common threats such as cross-site scripting (XSS), SQL injection, and CSRF attacks.
+            <br><br>
+            Deployment: After development, web applications need to be deployed to servers where they can be accessed by users. This involves configuring servers, setting up databases, and ensuring the application runs smoothly in a production environment.
+            <br><br>
+            Continuous Learning: The field of web development is constantly evolving, with new technologies and techniques emerging regularly. Therefore, developers need to stay updated with the latest trends and continuously improve their skills.
+          </p>
+          <a href="#">Read next</a>
+        </div>
+     </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="footer-col">
+         <h3>Top Products</h3>
+         <li>Manage Reputation</li>
+         <li>Power tools</li>
+         <li>Manage Website</li>
+         <li>Markerting Service</li>
+    </div>
+
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+        <li>Manage Reputation</li>
+        <li>Power tools</li>
+        <li>Manage Website</li>
+        <li>Markerting Service</li>
+    </div>
+
+    <div class="footer-col">
+      <h3>Features</h3>
+        <li>Manage Reputation</li>
+        <li>Power tools</li>
+        <li>Manage Website</li>
+        <li>Markerting Service</li>
+    </div>
+
+    <div class="footer-col">
+      <h3>Resources</h3>
+      <li>Guides</li>
+      <li>Expert</li>
+      <li>Manage Website</li>
+      <li>Markerting Service</li>
+    </div>
+
+    <div class="footer-col">
+         <h3>Newsletter</h3>
+         <p>You can trust us. we only send promo offers</p>
+         <div class="subscribe">
+              <input type="text" placeholder="Your Email address">
+              <a href="#" class="yellow">SUBSCRIBE</a>
+         </div>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright ©2022 All rights reserved | By Dandy</p>
+      <div class="pro-links">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    $('#menu-btn').click(function(){
+      $('nav .navigation ul').addClass('active')
+    });
+    $('#menu-close').click(function(){
+      $('nav .navigation ul').removeClass('active')
+    });
+  </script>
+    
+  
+</body>
+</html>
